@@ -20,3 +20,16 @@ margin-left margin-top margin-right
 前端工程師思維 ： 一組一組往下包‘ 可以用不到 但避免要用的時候沒包到,導致重寫
 字體加在：head那包, 到google fonts 找連結複製貼上‘到ＣＳＳ要加font-family:'字體ａ','字體Ｂ‘;>> ＣＳＳ是告訴軟體要使用這個字體！
 
+2023.11.7 
+刻出unocha 的header了
+
+2023.11.8
+font: 400=normal 700=bold 
+文字的置左:text-align: left; 、置中: text-align: center; 、置右: text-align: right;
+在容器中的置中 
+.container {
+    display: block;
+    width: 1070px;
+    margin: 0 auto; →(如果寬度不夠佔據一整行,剩下的空隙 margin會自動補, )
+    }
+
