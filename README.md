@@ -33,3 +33,8 @@ font: 400=normal 700=bold
     margin: 0 auto; →(如果寬度不夠佔據一整行,剩下的空隙 margin會自動補, )
     }
 
+2023.11.11
+今天把LOGO放上去, 用到 display:flex 
+align 上下 justify 左右 
+是排版很重要的招數 
+EX: 兩個區塊不想同時靠左或靠右, 把其中一個下margin-left/right: auto 即可解決
