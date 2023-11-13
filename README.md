@@ -38,3 +38,9 @@ font: 400=normal 700=bold
 align 上下 justify 左右 
 是排版很重要的招數 
 EX: 兩個區塊不想同時靠左或靠右, 把其中一個下margin-left/right: auto 即可解決
+
+2023.11.12
+更複雜的版面配置用
+ position: relative ←→　position: absolute
+ 鎖住一個元素→ position: fixed; EX: 鎖住一個按鈕, 怎麼滑網頁, 他都會固定在某個地方
+ 
