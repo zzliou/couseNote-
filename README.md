@@ -34,13 +34,54 @@ font: 400=normal 700=bold
     }
 
 2023.11.11
-今天把LOGO放上去, 用到 display:flex 
+今天把LOGO放上去, 用到 display:flex 這個語法, "彈性"
+.header .navbar {
+  display: flex; -> 彈性
+  align-items: center; -> 上下置中 
 align 上下 justify 左右 
 是排版很重要的招數 
-EX: 兩個區塊不想同時靠左或靠右, 把其中一個下margin-left/right: auto 即可解決
+EX: 兩個區塊不想同時靠左或靠右, 把其中一個區塊下margin-left/right: auto 即可解決
 
 2023.11.12
+position 
+有分成static (預設值)、absolute (絕對配置)、relative (相對配置)、fixed (固定配置)
+
+position: fixed　固定配置 :將元素固定在某個地方 →滑網頁的時候他都會固定出現在某個地方 
+ .oder-button-container {
+    position: fixed;
+    right: 100px;　位置要擺哪裡
+    bottom: 50px;
+    background-color: white; 　底色
+    width: 100px;　　大小
+    height: 100px;　　
+    border-radius: 50px; -> 邊框圓角
+    padding: 20px;　
+    width: 50px;　正圓
+    height: 50px;
+    border: solid #eed7b0;　外框的樣式跟顏色
+}
+
 更複雜的版面配置用
- position: relative ←→　position: absolute
- 鎖住一個元素→ position: fixed; EX: 鎖住一個按鈕, 怎麼滑網頁, 他都會固定在某個地方
+ * 一個用position: relative ←→　另一個就要用position: absolute
+因為是相呼應的元素才會喚起這兩個功能!
+
+.oder-button-container .wrapper {             記得創一個ｃｌａｓｓ作為相對配置的母------------> 
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.oder-button-container .wrapper .oder-cute-image {　　　子
+    position: absolute;
+    width: 60px;
+    right: 8px;
+    bottom: 0px;  如果沒有差太多,沒有更改到bottom 還是要放0 , 把它keep住, 免得換了不同版面會跑掉
+}
+
+.oder-button-container .wrapper .oder-text-image {　　子　
+    position: absolute;
+    width: 20px;
+}
+
+
  
