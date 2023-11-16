@@ -83,5 +83,11 @@ position: fixed　固定配置 :將元素固定在某個地方 →滑網頁的�
     width: 20px;
 }
 
+2023.11.16
+table 
+tr = table row & td = table data 
+也可以用 thead tbody tfoot 
+Form
+
 
  
